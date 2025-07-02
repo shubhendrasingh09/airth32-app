@@ -1,0 +1,24 @@
+cmake_minimum_required(VERSION 3.10)
+project(repolib_app C)
+
+set(CMAKE_C_STANDARD 11)
+
+# Add executable
+add_executable(${PROJECT_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/src/main.c)
+
+# Specify the path to the repolib headers and library
+# You may set these from the command line or hardcode here
+# For example: -DREPOLIB_INCLUDE_DIR=/usr/local/include -DREPOLIB_LIB_DIR=/usr/local/lib
+
+if(NOT DEFINED REPOLIB_INCLUDE_DIR)
+    set(REPOLIB_INCLUDE_DIR "/usr/local/include")
+endif()
+
+if(NOT DEFINED REPOLIB_LIB_DIR)
+    set(REPOLIB_LIB_DIR "/usr/local/lib")
+endif()
+
+# Include and link repolib
+target_include_directories(${PROJECT_NAME} PRIVATE ${REPOLIB_INCLUDE_DIR})
+target_link_directories(${PROJECT_NAME} PRIVATE ${REPOLIB_LIB_DIR})
+target_link_libraries(${PROJECT_NAME} PRIVATE ${REPOLIB_LIB_DIR}/repolib.so)

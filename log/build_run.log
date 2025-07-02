@@ -1,0 +1,20 @@
+shubhendra@ShubhendraLOQ:/mnt/c/Users/shubh/Documents/repolib-app/build$ cmake -S ..
+-- The C compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/c/Users/shubh/Documents/repolib-app/build
+shubhendra@ShubhendraLOQ:/mnt/c/Users/shubh/Documents/repolib-app/build$ make
+[ 50%] Building C object CMakeFiles/repolib_app.dir/src/main.c.o
+[100%] Linking C executable repolib_app
+[100%] Built target repolib_app
+shubhendra@ShubhendraLOQ:/mnt/c/Users/shubh/Documents/repolib-app/build$ ./repolib_app 
+Addition: 20 + 5 = 25
+Subtraction: 20 - 5 = 15
+Multiplication: 20 * 5 = 100
+Division: 20 / 5 = 4
+shubhendra@ShubhendraLOQ:/mnt/c/Users/shubh/Documents/repolib-app/build$ 

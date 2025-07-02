@@ -1,0 +1,3 @@
+[ 50%] Building C object CMakeFiles/repolib_app.dir/src/main.c.o
+[100%] Linking C executable repolib_app
+[100%] Built target repolib_app
